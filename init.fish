@@ -13,6 +13,12 @@ set -U tide_context_hostname_parts 5
 set -U tide_cmd_duration_threshold -1
 set -U tide_cmd_duration_decimals 3
 
+set -U tide_pwd_bg_color 2068c3
+set -U tide_jj_bg_color 00afff
+set -U tide_jj_color black
+
+set -U fish_greeting
+
 fish_add_path -U ~/.local/bin ~/.cargo/bin /opt/homebrew/bin
 
 fish_config theme save 'Tomorrow Night Bright'
