@@ -14,4 +14,13 @@ elif command -v vim ; then
     vim "+PlugUpdate +qall"
 fi
 
+if command -v jj ; then
+    jj config set --user ui.default-command log
+fi
+
+if command -v fish ; then
+    fish init.fish
+fi
+
+
 rm -rf setup.sh init.fish .git README.rst
