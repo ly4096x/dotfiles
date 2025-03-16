@@ -14,8 +14,9 @@ set -U tide_cmd_duration_threshold -1
 set -U tide_cmd_duration_decimals 3
 
 set -U tide_pwd_bg_color 2068c3
-set -U tide_jj_bg_color 00afff
-set -U tide_jj_color black
+set -U tide_jj_color normal
+set -U tide_jj_bg_color 333
+set -U tide_jj_bg_color_enforced true
 
 set -U fish_greeting
 
