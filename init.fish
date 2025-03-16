@@ -6,12 +6,14 @@ tide configure --auto --style=Rainbow --prompt_colors='True color' --show_time='
 
 set -U tide_left_prompt_suffix ''
 set -U tide_right_prompt_prefix ''
-set -U tide_left_prompt_items context pwd jj git newline character
+set -U tide_left_prompt_items context shlvl vi_mode pwd jj newline character
 set -U tide_right_prompt_items status cmd_duration jobs direnv node python rustc java php pulumi ruby go gcloud kubectl distrobox toolbox terraform aws nix_shell crystal elixir zig time
 set -U tide_context_always_display true
 set -U tide_context_hostname_parts 5
 set -U tide_cmd_duration_threshold -1
 set -U tide_cmd_duration_decimals 3
+set -U tide_shlvl_bg_color C4A000
+set -U tide_shlvl_icon '>'
 
 set -U tide_pwd_bg_color 2068c3
 set -U tide_jj_color normal
