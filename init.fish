@@ -20,6 +20,8 @@ set -U tide_jj_bg_color_enforced true
 
 set -U fish_greeting
 
+set -U fish_escape_delay_ms 300
+
 fish_add_path -U ~/.local/bin ~/.cargo/bin /opt/homebrew/bin
 
 fish_config theme save 'Tomorrow Night Bright'
