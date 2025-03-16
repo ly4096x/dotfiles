@@ -41,3 +41,4 @@ if test -n "$WSL_DISTRO_NAME"
 end
 
 alias --save tmux='tmux -2'
+alias --save l='ll -a'
