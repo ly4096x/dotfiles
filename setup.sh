@@ -18,9 +18,4 @@ if command -v jj ; then
     jj config set --user ui.default-command log
 fi
 
-if command -v fish ; then
-    fish init.fish
-fi
-
-
 rm -rf setup.sh init.fish .git README.rst
