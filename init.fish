@@ -1,6 +1,6 @@
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 
-fisher install ly4096x/tide ly4096x/fish-plugin-sudope
+echo n | fisher install ly4096x/tide ly4096x/fish-plugin-sudope
 
 tide configure --auto --style=Rainbow --prompt_colors='True color' --show_time='24-hour format' --rainbow_prompt_separators=Vertical --powerline_prompt_heads=Slanted --powerline_prompt_tails=Flat --powerline_prompt_style='Two lines, character and frame' --prompt_connection=Dotted --powerline_right_prompt_frame=No --prompt_connection_andor_frame_color=Lightest --prompt_spacing=Compact --icons='Few icons' --transient=No
 
@@ -26,7 +26,7 @@ set -U fish_escape_delay_ms 300
 
 fish_add_path -U ~/.local/bin ~/.cargo/bin /opt/homebrew/bin
 
-fish_config theme save 'Tomorrow Night Bright'
+yes | fish_config theme save 'Tomorrow Night Bright'
 
 command -sq vim && set -Ux EDITOR vim
 command -sq nvim && set -Ux EDITOR nvim
