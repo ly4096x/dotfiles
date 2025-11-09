@@ -1,3 +1,3 @@
 status is-interactive || exit
 
-bind ctrl-c 'echo "^C"; commandline | cat; commandline -f kill-whole-line repaint'
+bind ctrl-c 'test -z (commandline) && commandline -r " "' cancel-commandline
